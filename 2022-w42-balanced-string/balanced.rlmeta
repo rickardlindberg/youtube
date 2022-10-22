@@ -1,0 +1,12 @@
+Balanced {
+    string = item* !.
+    item =
+        | '(' item* ')'
+        | '{' item* '}'
+        | !brace .
+    brace =
+        | '('
+        | ')'
+        | '{'
+        | '}'
+}
